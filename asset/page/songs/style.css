@@ -5,7 +5,8 @@
 .container2{
     border-radius: 10px;
     /* height: 95%; */
-    width: 915px;
+    /* width: 915px; */
+    width: 90wh;
     margin:10px;
     padding:0px 0px 10px 0px;
     overflow-y: scroll;
