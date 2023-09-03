@@ -5,8 +5,7 @@
 .container2{
     border-radius: 10px;
     /* height: 95%; */
-    width: 900px;
-    margin:10px;
+    width: 68vw;
     padding:0px 10px 10px 20px;
     overflow-y: scroll;
     background-color: #1b1b1b;
@@ -14,7 +13,8 @@
 .header{
     margin-top: 0 auto;
     padding: 10px;
-    width: 100%;
+    width: 98%;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,19 +28,35 @@
     gap: 20px;
     align-items: center;
 }
-.search-h{
-    height: 50px;
+input, .search-h{
+    color: white;
+    padding-left: 40px;
+    height: 45px;
     width: 350px;
     background-color: #242424;
     border-radius: 50px;
-    border:2px solid #fff;
+    border: none;
+    /* border:2px solid #fff; */
     display: flex;
     align-items: center;
     gap:10px;
 }
+input, .search-h:focus{
+    outline: none;
+    border: 1px solid #fff;
+    
+}
+.label-search{
+    position: relative;
+    /* height: 47px; */
+}
+.-search-{
+    position: absolute;
+    top: -3px;
+    left:10px;}
 .svg-search-{
-    fill: #fff;
-    height: 20px;
+    height: 18px;
+    fill: #a7a7a7;
     margin-bottom: 15px;
 }
 .search-h span{
@@ -75,106 +91,18 @@
     margin-left: 50%;
 }
 
-
-
-
-
-
-@media(max-width:1050px) {
-    
-    .container1{
-        max-width: 30px;
-        min-width: 330px;
-    }
-    .container2{
-        min-width:600px
-    }
-    .playing{
-        max-width: 300px;
+@media (max-width: 1050px){
+    .search-h{
+        width: 200px;
     }
 }
-
-
-
 @media (max-width: 800px){
-    .body{      
-        overflow-x: scroll;
-    }
-    .body::-webkit-scrollbar{
-    display: none;
-    }
-    .container{      
-        width: 960px;
-    }
-    .container1{
-        min-width: 310px;
-    }
-    .container2{
-        min-width:600px;
-    }
-    .header{
-        width: 600px;
-    }
-    .contain{
-        width:600px;
-    }
-    .box2- p{
-        font-size: 11px;
-        font-weight: 500;
-        letter-spacing: 0px;
-    }
-    .b2-{
-        height: 120px;
-    }
-    
-    .play{
-        width: 920px;
-    }
-    .song{
-        width: 300px;
-        
-    }
-    .playing{
-        width:300px;
-    }
-    .name{
-        display: flex;
-        align-items: center;
-        gap: 0px;
-    }
-    .svg-song{
-        display: flex;
-    }
-    .p-btn{
-        gap:10px
-    }
-    .t-btn{
-        justify-content: center;
-    }
-    .t-line{
-        width: 70%;
+    .search-h{
+        width:200px;
     }
 }
-@media(max-height:630px){
-    .body{
-        height: 640px;
-        overflow-y: scroll;
-    }
-    .body::-webkit-scrollbar{
-        display: none;
-    } 
-    
-    
-    .container1{ 
-        height: 530px;
-        height: 98.5%;
-        border-radius: 10px;
-    }
-    .container2{
-        height: 95%;
-    }
-    .play{
-        height: 90px;
-    }
-    
-}
+
+
+
+
+
